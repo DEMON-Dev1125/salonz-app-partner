@@ -1,0 +1,108 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button text="" icon="chevron-back-outline"></ion-back-button>
+        </ion-buttons>
+        <ion-title>
+            {{'my_profile' | translate}}
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="add_profile_photos">
+        <h2> {{'add_profile_photos' | translate}}</h2>
+        <div class="scroll-x">
+            <div class="img_box center_img animate__animated animate__zoomIn">
+                <ion-icon class="zmdi zmdi-camera"></ion-icon>
+            </div>
+
+            <div class="img_box center_img animate__animated animate__zoomIn">
+                <img src='assets/images/1.png' class="crop_img">
+                <ion-icon class="zmdi zmdi-delete"></ion-icon>
+            </div>
+            <div class="img_box center_img animate__animated animate__zoomIn">
+                <img src='assets/images/3.png' class="crop_img">
+                <ion-icon class="zmdi zmdi-delete"></ion-icon>
+            </div>
+            <div class="img_box center_img animate__animated animate__zoomIn">
+                <img src='assets/images/4.png' class="crop_img">
+                <ion-icon class="zmdi zmdi-delete"></ion-icon>
+            </div>
+            <div class="img_box center_img animate__animated animate__zoomIn">
+                <img src='assets/images/5.png' class="crop_img">
+                <ion-icon class="zmdi zmdi-delete"></ion-icon>
+            </div>
+        </div>
+    </div>
+
+    <div class="form">
+        <h2> {{'salon_profile' | translate}}</h2>
+        <ion-list lines="none">
+            <ion-item lines="none" class="animate__animated animate__fadeInUp">
+                <div class="item_inner d-flex">
+                    <div class="icon_box ion-text-start">
+                        <ion-icon class="zmdi zmdi-account"></ion-icon>
+                    </div>
+                    <div class="input_box">
+                        <ion-label mode="md" position="stacked">{{"salon_name" | translate}}</ion-label>
+                        <ion-input mode="md" type="name" placeholder="" value="Restro Salons" readonly="boolean"></ion-input>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item lines="none" class="animate__animated animate__fadeInUp">
+                <div class="item_inner d-flex">
+                    <div class="icon_box ion-text-start">
+                        <ion-icon class="zmdi zmdi-email"></ion-icon>
+                    </div>
+                    <div class="input_box">
+                        <ion-label mode="md" position="stacked">{{"email_address" | translate}}</ion-label>
+                        <ion-input mode="md" type="email" placeholder="" value="restrosalonsh@mail.com" readonly="boolean"></ion-input>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item lines="none" class="animate__animated animate__fadeInUp">
+                <div class="item_inner d-flex">
+                    <div class="icon_box ion-text-start">
+                        <ion-icon class="zmdi zmdi-smartphone-android"></ion-icon>
+                    </div>
+                    <div class="input_box">
+                        <ion-label mode="md" position="stacked">{{"phone_number" | translate}}</ion-label>
+                        <ion-input mode="md" type="text" placeholder="" value="+1 987 654 3210" readonly="boolean"></ion-input>
+                    </div>
+                </div>
+            </ion-item>
+            <div class="about_salon animate__animated animate__fadeInUp">
+                <h2> {{'about_salon' | translate}}</h2>
+                <ion-item lines="none">
+                    <div class="item_inner d-flex">
+                        <div class="input_box">
+                            <ion-textarea mode="md" type="text" rows="3" placeholder="" value="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."></ion-textarea>
+                        </div>
+                    </div>
+                </ion-item>
+            </div>
+
+
+            <div class="salon_address animate__animated animate__fadeInUp" (click)="set_address()">
+                <h2> {{'salon_address' | translate}}</h2>
+                <ion-item lines="none">
+                    <div class="item_inner d-flex">
+                        <div class="input_box">
+                            <h3>Central Park, City Tower, New York</h3>
+                        </div>
+                        <div class="icon_box ion-text-end">
+                            <ion-icon class="zmdi zmdi-pin"></ion-icon>
+                        </div>
+                    </div>
+                </ion-item>
+            </div>
+        </ion-list>
+    </div>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+    <ion-button size="large" expand="full" class="btn">{{'update_info' | translate}}</ion-button>
+</ion-footer>

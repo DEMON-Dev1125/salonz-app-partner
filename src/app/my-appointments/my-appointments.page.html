@@ -1,0 +1,1297 @@
+<ion-header class="bg_transparent">
+    <ion-toolbar>
+        <ion-title>
+            <div class="title_inner d-flex">
+                {{'my_appointments' | translate}}
+                <span class="end">April 2020</span>
+            </div>
+        </ion-title>
+    </ion-toolbar>
+
+    <ion-segment mode="ios" scrollable [(ngModel)]="tab" lines="none">
+        <ion-segment-button mode="ios" value="15">
+            <ion-label>
+                <h3>Apr</h3>
+                <h2>15</h2>
+                <h3 class="day">Sat</h3>
+            </ion-label>
+        </ion-segment-button>
+        <ion-segment-button mode="ios" value="16">
+            <ion-label>
+                <h3>Apr</h3>
+                <h2>16</h2>
+                <h3 class="day">Mon</h3>
+            </ion-label>
+        </ion-segment-button>
+        <ion-segment-button mode="ios" value="17">
+            <ion-label>
+                <h3>Apr</h3>
+                <h2>17</h2>
+                <h3 class="day">Tue</h3>
+            </ion-label>
+        </ion-segment-button>
+        <ion-segment-button mode="ios" value="18">
+            <ion-label>
+                <h3>Apr</h3>
+                <h2>18</h2>
+                <h3 class="day">Thu</h3>
+            </ion-label>
+        </ion-segment-button>
+        <ion-segment-button mode="ios" value="19">
+            <ion-label>
+                <h3>Apr</h3>
+                <h2>19</h2>
+                <h3 class="day">Fri</h3>
+            </ion-label>
+        </ion-segment-button>
+        <ion-segment-button mode="ios" value="20">
+            <ion-label>
+                <h3>Apr</h3>
+                <h2>20</h2>
+                <h3 class="day">Sat</h3>
+            </ion-label>
+        </ion-segment-button>
+        <ion-segment-button mode="ios" value="21">
+            <ion-label>
+                <h3>Apr</h3>
+                <h2>21</h2>
+                <h3 class="day">Sun</h3>
+            </ion-label>
+        </ion-segment-button>
+    </ion-segment>
+</ion-header>
+
+<ion-content fullscreen>
+    <div class="tab_content" [ngSwitch]="tab">
+
+        <ion-list lines="none" *ngSwitchCase="'15'">
+            <h2>24 {{'appointments' | translate}}</h2>
+            <ion-item class="animate__animated animate__fadeInUp" (click)="appointment_info()">
+                <div class="item_inner d-flex">
+                    <div class="img_appointmentDate">
+                        <div class="img_box center_img">
+                            <img src="assets/images/user_1.png" class="crop_img">
+                        </div>
+                        <div class="appointment_date ion-text-end">
+                            <h2>12:00</h2>
+                            <h3 class="day">PM</h3>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h5 class="d-flex">4 {{'services' | translate}} <span class="end">$93.00</span></h5>
+                        <h3>Samantha Smith</h3>
+                        <h4 class="d-flex">
+                            <ion-icon class="zmdi zmdi-phone"></ion-icon>
+                            <span>987 654 3210</span>
+
+                            <span class="end">{{'call_now' | translate}}</span>
+                        </h4>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item class="animate__animated animate__fadeInUp" (click)="appointment_info()">
+                <div class="item_inner d-flex">
+                    <div class="img_appointmentDate">
+                        <div class="img_box center_img">
+                            <img src="assets/images/user_2.png" class="crop_img">
+                        </div>
+                        <div class="appointment_date ion-text-end">
+                            <h2>01:00</h2>
+                            <h3 class="day">PM</h3>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h5 class="d-flex">3 {{'services' | translate}} <span class="end">$93.00</span></h5>
+                        <h3>Emilli Williamson</h3>
+                        <h4 class="d-flex">
+                            <ion-icon class="zmdi zmdi-phone"></ion-icon>
+                            <span>987 654 3210</span>
+
+                            <span class="end">{{'call_now' | translate}}</span>
+                        </h4>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item class="animate__animated animate__fadeInUp" (click)="appointment_info()">
+                <div class="item_inner d-flex">
+                    <div class="img_appointmentDate">
+                        <div class="img_box center_img">
+                            <img src="assets/images/user_3.png" class="crop_img">
+                        </div>
+                        <div class="appointment_date ion-text-end">
+                            <h2>04:00</h2>
+                            <h3 class="day">PM</h3>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h5 class="d-flex">5 {{'services' | translate}} <span class="end">$100.00</span></h5>
+                        <h3>Angelina Thomas</h3>
+                        <h4 class="d-flex">
+                            <ion-icon class="zmdi zmdi-phone"></ion-icon>
+                            <span>987 654 3210</span>
+
+                            <span class="end">{{'call_now' | translate}}</span>
+                        </h4>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item class="animate__animated animate__fadeInUp" (click)="appointment_info()">
+                <div class="item_inner d-flex">
+                    <div class="img_appointmentDate">
+                        <div class="img_box center_img">
+                            <img src="assets/images/user_4.png" class="crop_img">
+                        </div>
+                        <div class="appointment_date ion-text-end">
+                            <h2>07:00</h2>
+                            <h3 class="day">PM</h3>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h5 class="d-flex">4 {{'services' | translate}} <span class="end">$120.00</span></h5>
+                        <h3>Kiara Taylor</h3>
+                        <h4 class="d-flex">
+                            <ion-icon class="zmdi zmdi-phone"></ion-icon>
+                            <span>987 654 3210</span>
+
+                            <span class="end">{{'call_now' | translate}}</span>
+                        </h4>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item class="animate__animated animate__fadeInUp" (click)="appointment_info()">
+                <div class="item_inner d-flex">
+                    <div class="img_appointmentDate">
+                        <div class="img_box center_img">
+                            <img src="assets/images/user_1.png" class="crop_img">
+                        </div>
+                        <div class="appointment_date ion-text-end">
+                            <h2>12:00</h2>
+                            <h3 class="day">PM</h3>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h5 class="d-flex">4 {{'services' | translate}} <span class="end">$93.00</span></h5>
+                        <h3>Samantha Smith</h3>
+                        <h4 class="d-flex">
+                            <ion-icon class="zmdi zmdi-phone"></ion-icon>
+                            <span>987 654 3210</span>
+
+                            <span class="end">{{'call_now' | translate}}</span>
+                        </h4>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item class="animate__animated animate__fadeInUp" (click)="appointment_info()">
+                <div class="item_inner d-flex">
+                    <div class="img_appointmentDate">
+                        <div class="img_box center_img">
+                            <img src="assets/images/user_2.png" class="crop_img">
+                        </div>
+                        <div class="appointment_date ion-text-end">
+                            <h2>01:00</h2>
+                            <h3 class="day">PM</h3>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h5 class="d-flex">3 {{'services' | translate}} <span class="end">$93.00</span></h5>
+                        <h3>Emilli Williamson</h3>
+                        <h4 class="d-flex">
+                            <ion-icon class="zmdi zmdi-phone"></ion-icon>
+                            <span>987 654 3210</span>
+
+                            <span class="end">{{'call_now' | translate}}</span>
+                        </h4>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item class="animate__animated animate__fadeInUp" (click)="appointment_info()">
+                <div class="item_inner d-flex">
+                    <div class="img_appointmentDate">
+                        <div class="img_box center_img">
+                            <img src="assets/images/user_3.png" class="crop_img">
+                        </div>
+                        <div class="appointment_date ion-text-end">
+                            <h2>04:00</h2>
+                            <h3 class="day">PM</h3>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h5 class="d-flex">5 {{'services' | translate}} <span class="end">$100.00</span></h5>
+                        <h3>Angelina Thomas</h3>
+                        <h4 class="d-flex">
+                            <ion-icon class="zmdi zmdi-phone"></ion-icon>
+                            <span>987 654 3210</span>
+
+                            <span class="end">{{'call_now' | translate}}</span>
+                        </h4>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item class="animate__animated animate__fadeInUp" (click)="appointment_info()">
+                <div class="item_inner d-flex">
+                    <div class="img_appointmentDate">
+                        <div class="img_box center_img">
+                            <img src="assets/images/user_4.png" class="crop_img">
+                        </div>
+                        <div class="appointment_date ion-text-end">
+                            <h2>07:00</h2>
+                            <h3 class="day">PM</h3>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h5 class="d-flex">4 {{'services' | translate}} <span class="end">$120.00</span></h5>
+                        <h3>Kiara Taylor</h3>
+                        <h4 class="d-flex">
+                            <ion-icon class="zmdi zmdi-phone"></ion-icon>
+                            <span>987 654 3210</span>
+
+                            <span class="end">{{'call_now' | translate}}</span>
+                        </h4>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item class="animate__animated animate__fadeInUp" (click)="appointment_info()">
+                <div class="item_inner d-flex">
+                    <div class="img_appointmentDate">
+                        <div class="img_box center_img">
+                            <img src="assets/images/user_1.png" class="crop_img">
+                        </div>
+                        <div class="appointment_date ion-text-end">
+                            <h2>12:00</h2>
+                            <h3 class="day">PM</h3>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h5 class="d-flex">4 {{'services' | translate}} <span class="end">$93.00</span></h5>
+                        <h3>Samantha Smith</h3>
+                        <h4 class="d-flex">
+                            <ion-icon class="zmdi zmdi-phone"></ion-icon>
+                            <span>987 654 3210</span>
+
+                            <span class="end">{{'call_now' | translate}}</span>
+                        </h4>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item class="animate__animated animate__fadeInUp" (click)="appointment_info()">
+                <div class="item_inner d-flex">
+                    <div class="img_appointmentDate">
+                        <div class="img_box center_img">
+                            <img src="assets/images/user_2.png" class="crop_img">
+                        </div>
+                        <div class="appointment_date ion-text-end">
+                            <h2>01:00</h2>
+                            <h3 class="day">PM</h3>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h5 class="d-flex">3 {{'services' | translate}} <span class="end">$93.00</span></h5>
+                        <h3>Emilli Williamson</h3>
+                        <h4 class="d-flex">
+                            <ion-icon class="zmdi zmdi-phone"></ion-icon>
+                            <span>987 654 3210</span>
+
+                            <span class="end">{{'call_now' | translate}}</span>
+                        </h4>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item class="animate__animated animate__fadeInUp" (click)="appointment_info()">
+                <div class="item_inner d-flex">
+                    <div class="img_appointmentDate">
+                        <div class="img_box center_img">
+                            <img src="assets/images/user_3.png" class="crop_img">
+                        </div>
+                        <div class="appointment_date ion-text-end">
+                            <h2>04:00</h2>
+                            <h3 class="day">PM</h3>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h5 class="d-flex">5 {{'services' | translate}} <span class="end">$100.00</span></h5>
+                        <h3>Angelina Thomas</h3>
+                        <h4 class="d-flex">
+                            <ion-icon class="zmdi zmdi-phone"></ion-icon>
+                            <span>987 654 3210</span>
+
+                            <span class="end">{{'call_now' | translate}}</span>
+                        </h4>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item class="animate__animated animate__fadeInUp" (click)="appointment_info()">
+                <div class="item_inner d-flex">
+                    <div class="img_appointmentDate">
+                        <div class="img_box center_img">
+                            <img src="assets/images/user_4.png" class="crop_img">
+                        </div>
+                        <div class="appointment_date ion-text-end">
+                            <h2>07:00</h2>
+                            <h3 class="day">PM</h3>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h5 class="d-flex">4 {{'services' | translate}} <span class="end">$120.00</span></h5>
+                        <h3>Kiara Taylor</h3>
+                        <h4 class="d-flex">
+                            <ion-icon class="zmdi zmdi-phone"></ion-icon>
+                            <span>987 654 3210</span>
+
+                            <span class="end">{{'call_now' | translate}}</span>
+                        </h4>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item class="animate__animated animate__fadeInUp" (click)="appointment_info()">
+                <div class="item_inner d-flex">
+                    <div class="img_appointmentDate">
+                        <div class="img_box center_img">
+                            <img src="assets/images/user_1.png" class="crop_img">
+                        </div>
+                        <div class="appointment_date ion-text-end">
+                            <h2>12:00</h2>
+                            <h3 class="day">PM</h3>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h5 class="d-flex">4 {{'services' | translate}} <span class="end">$93.00</span></h5>
+                        <h3>Samantha Smith</h3>
+                        <h4 class="d-flex">
+                            <ion-icon class="zmdi zmdi-phone"></ion-icon>
+                            <span>987 654 3210</span>
+
+                            <span class="end">{{'call_now' | translate}}</span>
+                        </h4>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item class="animate__animated animate__fadeInUp" (click)="appointment_info()">
+                <div class="item_inner d-flex">
+                    <div class="img_appointmentDate">
+                        <div class="img_box center_img">
+                            <img src="assets/images/user_2.png" class="crop_img">
+                        </div>
+                        <div class="appointment_date ion-text-end">
+                            <h2>01:00</h2>
+                            <h3 class="day">PM</h3>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h5 class="d-flex">3 {{'services' | translate}} <span class="end">$93.00</span></h5>
+                        <h3>Emilli Williamson</h3>
+                        <h4 class="d-flex">
+                            <ion-icon class="zmdi zmdi-phone"></ion-icon>
+                            <span>987 654 3210</span>
+
+                            <span class="end">{{'call_now' | translate}}</span>
+                        </h4>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item class="animate__animated animate__fadeInUp" (click)="appointment_info()">
+                <div class="item_inner d-flex">
+                    <div class="img_appointmentDate">
+                        <div class="img_box center_img">
+                            <img src="assets/images/user_3.png" class="crop_img">
+                        </div>
+                        <div class="appointment_date ion-text-end">
+                            <h2>04:00</h2>
+                            <h3 class="day">PM</h3>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h5 class="d-flex">5 {{'services' | translate}} <span class="end">$100.00</span></h5>
+                        <h3>Angelina Thomas</h3>
+                        <h4 class="d-flex">
+                            <ion-icon class="zmdi zmdi-phone"></ion-icon>
+                            <span>987 654 3210</span>
+
+                            <span class="end">{{'call_now' | translate}}</span>
+                        </h4>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item class="animate__animated animate__fadeInUp" (click)="appointment_info()">
+                <div class="item_inner d-flex">
+                    <div class="img_appointmentDate">
+                        <div class="img_box center_img">
+                            <img src="assets/images/user_4.png" class="crop_img">
+                        </div>
+                        <div class="appointment_date ion-text-end">
+                            <h2>07:00</h2>
+                            <h3 class="day">PM</h3>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h5 class="d-flex">4 {{'services' | translate}} <span class="end">$120.00</span></h5>
+                        <h3>Kiara Taylor</h3>
+                        <h4 class="d-flex">
+                            <ion-icon class="zmdi zmdi-phone"></ion-icon>
+                            <span>987 654 3210</span>
+
+                            <span class="end">{{'call_now' | translate}}</span>
+                        </h4>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item class="animate__animated animate__fadeInUp" (click)="appointment_info()">
+                <div class="item_inner d-flex">
+                    <div class="img_appointmentDate">
+                        <div class="img_box center_img">
+                            <img src="assets/images/user_1.png" class="crop_img">
+                        </div>
+                        <div class="appointment_date ion-text-end">
+                            <h2>12:00</h2>
+                            <h3 class="day">PM</h3>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h5 class="d-flex">4 {{'services' | translate}} <span class="end">$93.00</span></h5>
+                        <h3>Samantha Smith</h3>
+                        <h4 class="d-flex">
+                            <ion-icon class="zmdi zmdi-phone"></ion-icon>
+                            <span>987 654 3210</span>
+
+                            <span class="end">{{'call_now' | translate}}</span>
+                        </h4>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item class="animate__animated animate__fadeInUp" (click)="appointment_info()">
+                <div class="item_inner d-flex">
+                    <div class="img_appointmentDate">
+                        <div class="img_box center_img">
+                            <img src="assets/images/user_2.png" class="crop_img">
+                        </div>
+                        <div class="appointment_date ion-text-end">
+                            <h2>01:00</h2>
+                            <h3 class="day">PM</h3>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h5 class="d-flex">3 {{'services' | translate}} <span class="end">$93.00</span></h5>
+                        <h3>Emilli Williamson</h3>
+                        <h4 class="d-flex">
+                            <ion-icon class="zmdi zmdi-phone"></ion-icon>
+                            <span>987 654 3210</span>
+
+                            <span class="end">{{'call_now' | translate}}</span>
+                        </h4>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item class="animate__animated animate__fadeInUp" (click)="appointment_info()">
+                <div class="item_inner d-flex">
+                    <div class="img_appointmentDate">
+                        <div class="img_box center_img">
+                            <img src="assets/images/user_3.png" class="crop_img">
+                        </div>
+                        <div class="appointment_date ion-text-end">
+                            <h2>04:00</h2>
+                            <h3 class="day">PM</h3>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h5 class="d-flex">5 {{'services' | translate}} <span class="end">$100.00</span></h5>
+                        <h3>Angelina Thomas</h3>
+                        <h4 class="d-flex">
+                            <ion-icon class="zmdi zmdi-phone"></ion-icon>
+                            <span>987 654 3210</span>
+
+                            <span class="end">{{'call_now' | translate}}</span>
+                        </h4>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item class="animate__animated animate__fadeInUp" (click)="appointment_info()">
+                <div class="item_inner d-flex">
+                    <div class="img_appointmentDate">
+                        <div class="img_box center_img">
+                            <img src="assets/images/user_4.png" class="crop_img">
+                        </div>
+                        <div class="appointment_date ion-text-end">
+                            <h2>07:00</h2>
+                            <h3 class="day">PM</h3>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h5 class="d-flex">4 {{'services' | translate}} <span class="end">$120.00</span></h5>
+                        <h3>Kiara Taylor</h3>
+                        <h4 class="d-flex">
+                            <ion-icon class="zmdi zmdi-phone"></ion-icon>
+                            <span>987 654 3210</span>
+
+                            <span class="end">{{'call_now' | translate}}</span>
+                        </h4>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item class="animate__animated animate__fadeInUp" (click)="appointment_info()">
+                <div class="item_inner d-flex">
+                    <div class="img_appointmentDate">
+                        <div class="img_box center_img">
+                            <img src="assets/images/user_1.png" class="crop_img">
+                        </div>
+                        <div class="appointment_date ion-text-end">
+                            <h2>12:00</h2>
+                            <h3 class="day">PM</h3>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h5 class="d-flex">4 {{'services' | translate}} <span class="end">$93.00</span></h5>
+                        <h3>Samantha Smith</h3>
+                        <h4 class="d-flex">
+                            <ion-icon class="zmdi zmdi-phone"></ion-icon>
+                            <span>987 654 3210</span>
+
+                            <span class="end">{{'call_now' | translate}}</span>
+                        </h4>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item class="animate__animated animate__fadeInUp" (click)="appointment_info()">
+                <div class="item_inner d-flex">
+                    <div class="img_appointmentDate">
+                        <div class="img_box center_img">
+                            <img src="assets/images/user_2.png" class="crop_img">
+                        </div>
+                        <div class="appointment_date ion-text-end">
+                            <h2>01:00</h2>
+                            <h3 class="day">PM</h3>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h5 class="d-flex">3 {{'services' | translate}} <span class="end">$93.00</span></h5>
+                        <h3>Emilli Williamson</h3>
+                        <h4 class="d-flex">
+                            <ion-icon class="zmdi zmdi-phone"></ion-icon>
+                            <span>987 654 3210</span>
+
+                            <span class="end">{{'call_now' | translate}}</span>
+                        </h4>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item class="animate__animated animate__fadeInUp" (click)="appointment_info()">
+                <div class="item_inner d-flex">
+                    <div class="img_appointmentDate">
+                        <div class="img_box center_img">
+                            <img src="assets/images/user_3.png" class="crop_img">
+                        </div>
+                        <div class="appointment_date ion-text-end">
+                            <h2>04:00</h2>
+                            <h3 class="day">PM</h3>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h5 class="d-flex">5 {{'services' | translate}} <span class="end">$100.00</span></h5>
+                        <h3>Angelina Thomas</h3>
+                        <h4 class="d-flex">
+                            <ion-icon class="zmdi zmdi-phone"></ion-icon>
+                            <span>987 654 3210</span>
+
+                            <span class="end">{{'call_now' | translate}}</span>
+                        </h4>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item class="animate__animated animate__fadeInUp" (click)="appointment_info()">
+                <div class="item_inner d-flex">
+                    <div class="img_appointmentDate">
+                        <div class="img_box center_img">
+                            <img src="assets/images/user_4.png" class="crop_img">
+                        </div>
+                        <div class="appointment_date ion-text-end">
+                            <h2>07:00</h2>
+                            <h3 class="day">PM</h3>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h5 class="d-flex">4 {{'services' | translate}} <span class="end">$120.00</span></h5>
+                        <h3>Kiara Taylor</h3>
+                        <h4 class="d-flex">
+                            <ion-icon class="zmdi zmdi-phone"></ion-icon>
+                            <span>987 654 3210</span>
+
+                            <span class="end">{{'call_now' | translate}}</span>
+                        </h4>
+                    </div>
+                </div>
+            </ion-item>
+
+        </ion-list>
+
+
+
+
+        <ion-list lines="none" *ngSwitchCase="'16'">
+            <h2>6 {{'appointments' | translate}}</h2>
+            <ion-item class="animate__animated animate__fadeInUp" (click)="appointment_info()">
+                <div class="item_inner d-flex">
+                    <div class="img_appointmentDate">
+                        <div class="img_box center_img">
+                            <img src="assets/images/user_3.png" class="crop_img">
+                        </div>
+                        <div class="appointment_date ion-text-end">
+                            <h2>04:00</h2>
+                            <h3 class="day">PM</h3>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h5 class="d-flex">5 {{'services' | translate}} <span class="end">$100.00</span></h5>
+                        <h3>Angelina Thomas</h3>
+                        <h4 class="d-flex">
+                            <ion-icon class="zmdi zmdi-phone"></ion-icon>
+                            <span>987 654 3210</span>
+
+                            <span class="end">{{'call_now' | translate}}</span>
+                        </h4>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item class="animate__animated animate__fadeInUp" (click)="appointment_info()">
+                <div class="item_inner d-flex">
+                    <div class="img_appointmentDate">
+                        <div class="img_box center_img">
+                            <img src="assets/images/user_1.png" class="crop_img">
+                        </div>
+                        <div class="appointment_date ion-text-end">
+                            <h2>12:00</h2>
+                            <h3 class="day">PM</h3>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h5 class="d-flex">4 {{'services' | translate}} <span class="end">$93.00</span></h5>
+                        <h3>Samantha Smith</h3>
+                        <h4 class="d-flex">
+                            <ion-icon class="zmdi zmdi-phone"></ion-icon>
+                            <span>987 654 3210</span>
+
+                            <span class="end">{{'call_now' | translate}}</span>
+                        </h4>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item class="animate__animated animate__fadeInUp" (click)="appointment_info()">
+                <div class="item_inner d-flex">
+                    <div class="img_appointmentDate">
+                        <div class="img_box center_img">
+                            <img src="assets/images/user_2.png" class="crop_img">
+                        </div>
+                        <div class="appointment_date ion-text-end">
+                            <h2>01:00</h2>
+                            <h3 class="day">PM</h3>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h5 class="d-flex">3 {{'services' | translate}} <span class="end">$93.00</span></h5>
+                        <h3>Emilli Williamson</h3>
+                        <h4 class="d-flex">
+                            <ion-icon class="zmdi zmdi-phone"></ion-icon>
+                            <span>987 654 3210</span>
+
+                            <span class="end">{{'call_now' | translate}}</span>
+                        </h4>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item class="animate__animated animate__fadeInUp" (click)="appointment_info()">
+                <div class="item_inner d-flex">
+                    <div class="img_appointmentDate">
+                        <div class="img_box center_img">
+                            <img src="assets/images/user_4.png" class="crop_img">
+                        </div>
+                        <div class="appointment_date ion-text-end">
+                            <h2>07:00</h2>
+                            <h3 class="day">PM</h3>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h5 class="d-flex">4 {{'services' | translate}} <span class="end">$120.00</span></h5>
+                        <h3>Kiara Taylor</h3>
+                        <h4 class="d-flex">
+                            <ion-icon class="zmdi zmdi-phone"></ion-icon>
+                            <span>987 654 3210</span>
+
+                            <span class="end">{{'call_now' | translate}}</span>
+                        </h4>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item class="animate__animated animate__fadeInUp" (click)="appointment_info()">
+                <div class="item_inner d-flex">
+                    <div class="img_appointmentDate">
+                        <div class="img_box center_img">
+                            <img src="assets/images/user_3.png" class="crop_img">
+                        </div>
+                        <div class="appointment_date ion-text-end">
+                            <h2>04:00</h2>
+                            <h3 class="day">PM</h3>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h5 class="d-flex">5 {{'services' | translate}} <span class="end">$100.00</span></h5>
+                        <h3>Angelina Thomas</h3>
+                        <h4 class="d-flex">
+                            <ion-icon class="zmdi zmdi-phone"></ion-icon>
+                            <span>987 654 3210</span>
+
+                            <span class="end">{{'call_now' | translate}}</span>
+                        </h4>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item class="animate__animated animate__fadeInUp" (click)="appointment_info()">
+                <div class="item_inner d-flex">
+                    <div class="img_appointmentDate">
+                        <div class="img_box center_img">
+                            <img src="assets/images/user_1.png" class="crop_img">
+                        </div>
+                        <div class="appointment_date ion-text-end">
+                            <h2>12:00</h2>
+                            <h3 class="day">PM</h3>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h5 class="d-flex">4 {{'services' | translate}} <span class="end">$93.00</span></h5>
+                        <h3>Samantha Smith</h3>
+                        <h4 class="d-flex">
+                            <ion-icon class="zmdi zmdi-phone"></ion-icon>
+                            <span>987 654 3210</span>
+
+                            <span class="end">{{'call_now' | translate}}</span>
+                        </h4>
+                    </div>
+                </div>
+            </ion-item>
+        </ion-list>
+
+
+        <ion-list lines="none" *ngSwitchCase="'17'">
+            <h2>3 {{'appointments' | translate}}</h2>
+
+            <ion-item class="animate__animated animate__fadeInUp" (click)="appointment_info()">
+                <div class="item_inner d-flex">
+                    <div class="img_appointmentDate">
+                        <div class="img_box center_img">
+                            <img src="assets/images/user_2.png" class="crop_img">
+                        </div>
+                        <div class="appointment_date ion-text-end">
+                            <h2>01:00</h2>
+                            <h3 class="day">PM</h3>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h5 class="d-flex">3 {{'services' | translate}} <span class="end">$93.00</span></h5>
+                        <h3>Emilli Williamson</h3>
+                        <h4 class="d-flex">
+                            <ion-icon class="zmdi zmdi-phone"></ion-icon>
+                            <span>987 654 3210</span>
+
+                            <span class="end">{{'call_now' | translate}}</span>
+                        </h4>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item class="animate__animated animate__fadeInUp" (click)="appointment_info()">
+                <div class="item_inner d-flex">
+                    <div class="img_appointmentDate">
+                        <div class="img_box center_img">
+                            <img src="assets/images/user_3.png" class="crop_img">
+                        </div>
+                        <div class="appointment_date ion-text-end">
+                            <h2>04:00</h2>
+                            <h3 class="day">PM</h3>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h5 class="d-flex">5 {{'services' | translate}} <span class="end">$100.00</span></h5>
+                        <h3>Angelina Thomas</h3>
+                        <h4 class="d-flex">
+                            <ion-icon class="zmdi zmdi-phone"></ion-icon>
+                            <span>987 654 3210</span>
+
+                            <span class="end">{{'call_now' | translate}}</span>
+                        </h4>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item class="animate__animated animate__fadeInUp" (click)="appointment_info()">
+                <div class="item_inner d-flex">
+                    <div class="img_appointmentDate">
+                        <div class="img_box center_img">
+                            <img src="assets/images/user_4.png" class="crop_img">
+                        </div>
+                        <div class="appointment_date ion-text-end">
+                            <h2>07:00</h2>
+                            <h3 class="day">PM</h3>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h5 class="d-flex">4 {{'services' | translate}} <span class="end">$120.00</span></h5>
+                        <h3>Kiara Taylor</h3>
+                        <h4 class="d-flex">
+                            <ion-icon class="zmdi zmdi-phone"></ion-icon>
+                            <span>987 654 3210</span>
+
+                            <span class="end">{{'call_now' | translate}}</span>
+                        </h4>
+                    </div>
+                </div>
+            </ion-item>
+        </ion-list>
+
+
+
+        <ion-list lines="none" *ngSwitchCase="'18'">
+            <h2>5 {{'appointments' | translate}}</h2>
+
+
+
+            <ion-item class="animate__animated animate__fadeInUp" (click)="appointment_info()">
+                <div class="item_inner d-flex">
+                    <div class="img_appointmentDate">
+                        <div class="img_box center_img">
+                            <img src="assets/images/user_2.png" class="crop_img">
+                        </div>
+                        <div class="appointment_date ion-text-end">
+                            <h2>01:00</h2>
+                            <h3 class="day">PM</h3>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h5 class="d-flex">3 {{'services' | translate}} <span class="end">$93.00</span></h5>
+                        <h3>Emilli Williamson</h3>
+                        <h4 class="d-flex">
+                            <ion-icon class="zmdi zmdi-phone"></ion-icon>
+                            <span>987 654 3210</span>
+
+                            <span class="end">{{'call_now' | translate}}</span>
+                        </h4>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item class="animate__animated animate__fadeInUp" (click)="appointment_info()">
+                <div class="item_inner d-flex">
+                    <div class="img_appointmentDate">
+                        <div class="img_box center_img">
+                            <img src="assets/images/user_3.png" class="crop_img">
+                        </div>
+                        <div class="appointment_date ion-text-end">
+                            <h2>04:00</h2>
+                            <h3 class="day">PM</h3>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h5 class="d-flex">5 {{'services' | translate}} <span class="end">$100.00</span></h5>
+                        <h3>Angelina Thomas</h3>
+                        <h4 class="d-flex">
+                            <ion-icon class="zmdi zmdi-phone"></ion-icon>
+                            <span>987 654 3210</span>
+
+                            <span class="end">{{'call_now' | translate}}</span>
+                        </h4>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item class="animate__animated animate__fadeInUp" (click)="appointment_info()">
+                <div class="item_inner d-flex">
+                    <div class="img_appointmentDate">
+                        <div class="img_box center_img">
+                            <img src="assets/images/user_1.png" class="crop_img">
+                        </div>
+                        <div class="appointment_date ion-text-end">
+                            <h2>12:00</h2>
+                            <h3 class="day">PM</h3>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h5 class="d-flex">4 {{'services' | translate}} <span class="end">$93.00</span></h5>
+                        <h3>Samantha Smith</h3>
+                        <h4 class="d-flex">
+                            <ion-icon class="zmdi zmdi-phone"></ion-icon>
+                            <span>987 654 3210</span>
+
+                            <span class="end">{{'call_now' | translate}}</span>
+                        </h4>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item class="animate__animated animate__fadeInUp" (click)="appointment_info()">
+                <div class="item_inner d-flex">
+                    <div class="img_appointmentDate">
+                        <div class="img_box center_img">
+                            <img src="assets/images/user_4.png" class="crop_img">
+                        </div>
+                        <div class="appointment_date ion-text-end">
+                            <h2>07:00</h2>
+                            <h3 class="day">PM</h3>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h5 class="d-flex">4 {{'services' | translate}} <span class="end">$120.00</span></h5>
+                        <h3>Kiara Taylor</h3>
+                        <h4 class="d-flex">
+                            <ion-icon class="zmdi zmdi-phone"></ion-icon>
+                            <span>987 654 3210</span>
+
+                            <span class="end">{{'call_now' | translate}}</span>
+                        </h4>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item class="animate__animated animate__fadeInUp" (click)="appointment_info()">
+                <div class="item_inner d-flex">
+                    <div class="img_appointmentDate">
+                        <div class="img_box center_img">
+                            <img src="assets/images/user_3.png" class="crop_img">
+                        </div>
+                        <div class="appointment_date ion-text-end">
+                            <h2>04:00</h2>
+                            <h3 class="day">PM</h3>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h5 class="d-flex">5 {{'services' | translate}} <span class="end">$100.00</span></h5>
+                        <h3>Angelina Thomas</h3>
+                        <h4 class="d-flex">
+                            <ion-icon class="zmdi zmdi-phone"></ion-icon>
+                            <span>987 654 3210</span>
+
+                            <span class="end">{{'call_now' | translate}}</span>
+                        </h4>
+                    </div>
+                </div>
+            </ion-item>
+        </ion-list>
+
+        <ion-list lines="none" *ngSwitchCase="'19'">
+            <h2>2 {{'appointments' | translate}}</h2>
+
+            <ion-item class="animate__animated animate__fadeInUp" (click)="appointment_info()">
+                <div class="item_inner d-flex">
+                    <div class="img_appointmentDate">
+                        <div class="img_box center_img">
+                            <img src="assets/images/user_3.png" class="crop_img">
+                        </div>
+                        <div class="appointment_date ion-text-end">
+                            <h2>04:00</h2>
+                            <h3 class="day">PM</h3>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h5 class="d-flex">5 {{'services' | translate}} <span class="end">$100.00</span></h5>
+                        <h3>Angelina Thomas</h3>
+                        <h4 class="d-flex">
+                            <ion-icon class="zmdi zmdi-phone"></ion-icon>
+                            <span>987 654 3210</span>
+
+                            <span class="end">{{'call_now' | translate}}</span>
+                        </h4>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item class="animate__animated animate__fadeInUp" (click)="appointment_info()">
+                <div class="item_inner d-flex">
+                    <div class="img_appointmentDate">
+                        <div class="img_box center_img">
+                            <img src="assets/images/user_4.png" class="crop_img">
+                        </div>
+                        <div class="appointment_date ion-text-end">
+                            <h2>07:00</h2>
+                            <h3 class="day">PM</h3>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h5 class="d-flex">4 {{'services' | translate}} <span class="end">$120.00</span></h5>
+                        <h3>Kiara Taylor</h3>
+                        <h4 class="d-flex">
+                            <ion-icon class="zmdi zmdi-phone"></ion-icon>
+                            <span>987 654 3210</span>
+
+                            <span class="end">{{'call_now' | translate}}</span>
+                        </h4>
+                    </div>
+                </div>
+            </ion-item>
+        </ion-list>
+
+
+        <ion-list lines="none" *ngSwitchCase="'20'">
+            <h2>6 {{'appointments' | translate}}</h2>
+
+            <ion-item class="animate__animated animate__fadeInUp" (click)="appointment_info()">
+                <div class="item_inner d-flex">
+                    <div class="img_appointmentDate">
+                        <div class="img_box center_img">
+                            <img src="assets/images/user_1.png" class="crop_img">
+                        </div>
+                        <div class="appointment_date ion-text-end">
+                            <h2>12:00</h2>
+                            <h3 class="day">PM</h3>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h5 class="d-flex">4 {{'services' | translate}} <span class="end">$93.00</span></h5>
+                        <h3>Samantha Smith</h3>
+                        <h4 class="d-flex">
+                            <ion-icon class="zmdi zmdi-phone"></ion-icon>
+                            <span>987 654 3210</span>
+
+                            <span class="end">{{'call_now' | translate}}</span>
+                        </h4>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item class="animate__animated animate__fadeInUp" (click)="appointment_info()">
+                <div class="item_inner d-flex">
+                    <div class="img_appointmentDate">
+                        <div class="img_box center_img">
+                            <img src="assets/images/user_2.png" class="crop_img">
+                        </div>
+                        <div class="appointment_date ion-text-end">
+                            <h2>01:00</h2>
+                            <h3 class="day">PM</h3>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h5 class="d-flex">3 {{'services' | translate}} <span class="end">$93.00</span></h5>
+                        <h3>Emilli Williamson</h3>
+                        <h4 class="d-flex">
+                            <ion-icon class="zmdi zmdi-phone"></ion-icon>
+                            <span>987 654 3210</span>
+
+                            <span class="end">{{'call_now' | translate}}</span>
+                        </h4>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item class="animate__animated animate__fadeInUp" (click)="appointment_info()">
+                <div class="item_inner d-flex">
+                    <div class="img_appointmentDate">
+                        <div class="img_box center_img">
+                            <img src="assets/images/user_3.png" class="crop_img">
+                        </div>
+                        <div class="appointment_date ion-text-end">
+                            <h2>04:00</h2>
+                            <h3 class="day">PM</h3>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h5 class="d-flex">5 {{'services' | translate}} <span class="end">$100.00</span></h5>
+                        <h3>Angelina Thomas</h3>
+                        <h4 class="d-flex">
+                            <ion-icon class="zmdi zmdi-phone"></ion-icon>
+                            <span>987 654 3210</span>
+
+                            <span class="end">{{'call_now' | translate}}</span>
+                        </h4>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item class="animate__animated animate__fadeInUp" (click)="appointment_info()">
+                <div class="item_inner d-flex">
+                    <div class="img_appointmentDate">
+                        <div class="img_box center_img">
+                            <img src="assets/images/user_1.png" class="crop_img">
+                        </div>
+                        <div class="appointment_date ion-text-end">
+                            <h2>12:00</h2>
+                            <h3 class="day">PM</h3>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h5 class="d-flex">4 {{'services' | translate}} <span class="end">$93.00</span></h5>
+                        <h3>Samantha Smith</h3>
+                        <h4 class="d-flex">
+                            <ion-icon class="zmdi zmdi-phone"></ion-icon>
+                            <span>987 654 3210</span>
+
+                            <span class="end">{{'call_now' | translate}}</span>
+                        </h4>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item class="animate__animated animate__fadeInUp" (click)="appointment_info()">
+                <div class="item_inner d-flex">
+                    <div class="img_appointmentDate">
+                        <div class="img_box center_img">
+                            <img src="assets/images/user_2.png" class="crop_img">
+                        </div>
+                        <div class="appointment_date ion-text-end">
+                            <h2>01:00</h2>
+                            <h3 class="day">PM</h3>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h5 class="d-flex">3 {{'services' | translate}} <span class="end">$93.00</span></h5>
+                        <h3>Emilli Williamson</h3>
+                        <h4 class="d-flex">
+                            <ion-icon class="zmdi zmdi-phone"></ion-icon>
+                            <span>987 654 3210</span>
+
+                            <span class="end">{{'call_now' | translate}}</span>
+                        </h4>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item class="animate__animated animate__fadeInUp" (click)="appointment_info()">
+                <div class="item_inner d-flex">
+                    <div class="img_appointmentDate">
+                        <div class="img_box center_img">
+                            <img src="assets/images/user_4.png" class="crop_img">
+                        </div>
+                        <div class="appointment_date ion-text-end">
+                            <h2>07:00</h2>
+                            <h3 class="day">PM</h3>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h5 class="d-flex">4 {{'services' | translate}} <span class="end">$120.00</span></h5>
+                        <h3>Kiara Taylor</h3>
+                        <h4 class="d-flex">
+                            <ion-icon class="zmdi zmdi-phone"></ion-icon>
+                            <span>987 654 3210</span>
+
+                            <span class="end">{{'call_now' | translate}}</span>
+                        </h4>
+                    </div>
+                </div>
+            </ion-item>
+        </ion-list>
+
+
+        <ion-list lines="none" *ngSwitchCase="'21'">
+            <h2>5 {{'appointments' | translate}}</h2>
+
+            <ion-item class="animate__animated animate__fadeInUp" (click)="appointment_info()">
+                <div class="item_inner d-flex">
+                    <div class="img_appointmentDate">
+                        <div class="img_box center_img">
+                            <img src="assets/images/user_2.png" class="crop_img">
+                        </div>
+                        <div class="appointment_date ion-text-end">
+                            <h2>01:00</h2>
+                            <h3 class="day">PM</h3>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h5 class="d-flex">3 {{'services' | translate}} <span class="end">$93.00</span></h5>
+                        <h3>Emilli Williamson</h3>
+                        <h4 class="d-flex">
+                            <ion-icon class="zmdi zmdi-phone"></ion-icon>
+                            <span>987 654 3210</span>
+
+                            <span class="end">{{'call_now' | translate}}</span>
+                        </h4>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item class="animate__animated animate__fadeInUp" (click)="appointment_info()">
+                <div class="item_inner d-flex">
+                    <div class="img_appointmentDate">
+                        <div class="img_box center_img">
+                            <img src="assets/images/user_3.png" class="crop_img">
+                        </div>
+                        <div class="appointment_date ion-text-end">
+                            <h2>04:00</h2>
+                            <h3 class="day">PM</h3>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h5 class="d-flex">5 {{'services' | translate}} <span class="end">$100.00</span></h5>
+                        <h3>Angelina Thomas</h3>
+                        <h4 class="d-flex">
+                            <ion-icon class="zmdi zmdi-phone"></ion-icon>
+                            <span>987 654 3210</span>
+
+                            <span class="end">{{'call_now' | translate}}</span>
+                        </h4>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item class="animate__animated animate__fadeInUp" (click)="appointment_info()">
+                <div class="item_inner d-flex">
+                    <div class="img_appointmentDate">
+                        <div class="img_box center_img">
+                            <img src="assets/images/user_1.png" class="crop_img">
+                        </div>
+                        <div class="appointment_date ion-text-end">
+                            <h2>12:00</h2>
+                            <h3 class="day">PM</h3>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h5 class="d-flex">4 {{'services' | translate}} <span class="end">$93.00</span></h5>
+                        <h3>Samantha Smith</h3>
+                        <h4 class="d-flex">
+                            <ion-icon class="zmdi zmdi-phone"></ion-icon>
+                            <span>987 654 3210</span>
+
+                            <span class="end">{{'call_now' | translate}}</span>
+                        </h4>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item class="animate__animated animate__fadeInUp" (click)="appointment_info()">
+                <div class="item_inner d-flex">
+                    <div class="img_appointmentDate">
+                        <div class="img_box center_img">
+                            <img src="assets/images/user_4.png" class="crop_img">
+                        </div>
+                        <div class="appointment_date ion-text-end">
+                            <h2>07:00</h2>
+                            <h3 class="day">PM</h3>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h5 class="d-flex">4 {{'services' | translate}} <span class="end">$120.00</span></h5>
+                        <h3>Kiara Taylor</h3>
+                        <h4 class="d-flex">
+                            <ion-icon class="zmdi zmdi-phone"></ion-icon>
+                            <span>987 654 3210</span>
+
+                            <span class="end">{{'call_now' | translate}}</span>
+                        </h4>
+                    </div>
+                </div>
+            </ion-item>
+        </ion-list>
+
+
+
+
+    </div>
+</ion-content>

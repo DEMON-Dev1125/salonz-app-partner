@@ -1,0 +1,379 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>
+            <div class="title_inner d-flex">
+                {{'insight' | translate}}
+                <span class="end">April 2020</span>
+            </div>
+        </ion-title>
+    </ion-toolbar>
+    <ion-segment mode="ios" [(ngModel)]="tab" lines="none">
+        <ion-segment-button mode="ios" value="pageviews">
+            <ion-label>
+                {{'pageviews' | translate}}
+            </ion-label>
+        </ion-segment-button>
+        <ion-segment-button mode="ios" value="revenue">
+            <ion-label>
+                {{'revenue' | translate}}
+            </ion-label>
+        </ion-segment-button>
+    </ion-segment>
+</ion-header>
+
+<ion-content>
+    <div style="width: 100%;" [ngSwitch]="tab">
+        <div class="tab_content" *ngSwitchCase="'pageviews'">
+            <ion-card>
+                <div class="card_containt">
+                    <div class="graph_container d-flex">
+                        <div class="text_container">
+                            <p class="ion-text-end"><span>&nbsp;</span></p>
+                            <p class="ion-text-end"><span>&nbsp;</span></p>
+                            <p class="ion-text-end"><span>&nbsp;</span></p>
+                            <p class="ion-text-end"><span>&nbsp;</span></p>
+                            <p class="ion-text-end"><span>&nbsp;</span></p>
+                            <p class="ion-text-end"><span>&nbsp;</span></p>
+                        </div>
+                        <div class="graph end">
+                            <div class="bar_box">
+                                <div class="bar_box_inner">
+                                    <div class="bar profile_views" style="height:90%;"></div>
+                                    <div class="bar apnt_booked" style="height:20%;"></div>
+                                </div>
+                                <h4>15</h4>
+                            </div>
+                            <div class="bar_box">
+                                <div class="bar_box_inner">
+                                    <div class="bar profile_views" style="height:30%;"></div>
+                                    <div class="bar apnt_booked" style="height:15%;"></div>
+                                </div>
+                                <h4>14</h4>
+                            </div>
+                            <div class="bar_box">
+                                <div class="bar_box_inner">
+                                    <div class="bar profile_views" style="height:95%;"></div>
+                                    <div class="bar apnt_booked" style="height:30%;"></div>
+                                </div>
+                                <h4>13</h4>
+                            </div>
+                            <div class="bar_box">
+                                <div class="bar_box_inner">
+                                    <div class="bar profile_views" style="height:80%;"></div>
+                                    <div class="bar apnt_booked" style="height:65%;"></div>
+                                </div>
+                                <h4>12</h4>
+                            </div>
+                            <div class="bar_box">
+                                <div class="bar_box_inner">
+                                    <div class="bar profile_views" style="height:50%;"></div>
+                                    <div class="bar apnt_booked" style="height:20%;"></div>
+                                </div>
+                                <h4>11</h4>
+                            </div>
+                            <div class="bar_box">
+                                <div class="bar_box_inner">
+                                    <div class="bar profile_views" style="height:85%;"></div>
+                                    <div class="bar apnt_booked" style="height:40%;"></div>
+                                </div>
+                                <h4>10</h4>
+                            </div>
+                            <div class="bar_box">
+                                <div class="bar_box_inner">
+                                    <div class="bar profile_views" style="height:69%;"></div>
+                                    <div class="bar apnt_booked" style="height:45%;"></div>
+                                </div>
+                                <h4>9</h4>
+                            </div>
+                            <div class="bar_box">
+                                <div class="bar_box_inner">
+                                    <div class="bar profile_views" style="height:70%;"></div>
+                                    <div class="bar apnt_booked" style="height:35%;"></div>
+                                </div>
+                                <h4>8</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ion-card>
+
+
+            <div class="graph_details">
+                <ion-row>
+                    <ion-col size="4" class="apnt_booked ion-text-start">
+                        <h2> {{'profile_views' | translate}}</h2>
+                        <h3><span></span>&nbsp;&nbsp;826</h3>
+                    </ion-col>
+
+                    <ion-col size="4" class="booked ion-text-center">
+                        <h2> {{'apnt_booked' | translate}}</h2>
+                        <h3><span></span>&nbsp;&nbsp;129</h3>
+                    </ion-col>
+
+                    <ion-col size="4" class="conversion ion-text-end">
+                        <h2> {{'avg_conversion' | translate}}</h2>
+                        <h3><span></span>&nbsp;&nbsp;15.6%</h3>
+                    </ion-col>
+                </ion-row>
+            </div>
+
+
+            <ion-list lines="none">
+                <h3>{{'most_booked_service' | translate}}</h3>
+                <ion-item class="animate__animated animate__fadeInUp">
+                    <div class="item_inner">
+                        <h2 class="d-flex">Bridal Make up<span class="end">$1160.00</span></h2>
+                        <h4 class="d-flex">Face <span class="end">79 {{'times' | translate}}</span></h4>
+                    </div>
+                </ion-item>
+                <ion-item class="animate__animated animate__fadeInUp">
+                    <div class="item_inner">
+                        <h2 class="d-flex">Skin Light Masque<span class="end">$1057.00</span></h2>
+                        <h4 class="d-flex">Face <span class="end">63 {{'times' | translate}}</span></h4>
+                    </div>
+                </ion-item>
+                <ion-item class="animate__animated animate__fadeInUp">
+                    <div class="item_inner">
+                        <h2 class="d-flex">Color My Hair<span class="end">$970.00</span></h2>
+                        <h4 class="d-flex">Hair <span class="end">59 {{'times' | translate}}</span></h4>
+                    </div>
+                </ion-item>
+                <ion-item class="animate__animated animate__fadeInUp">
+                    <div class="item_inner">
+                        <h2 class="d-flex">Fruit Facial<span class="end">$855.00</span></h2>
+                        <h4 class="d-flex">Face <span class="end">48 {{'times' | translate}}</span></h4>
+                    </div>
+                </ion-item>
+                <ion-item class="animate__animated animate__fadeInUp">
+                    <div class="item_inner">
+                        <h2 class="d-flex">Color My Hair<span class="end">$1160.00</span></h2>
+                        <h4 class="d-flex">Hair <span class="end">33 {{'times' | translate}}</span></h4>
+                    </div>
+                </ion-item>
+
+                <ion-item class="animate__animated animate__fadeInUp">
+                    <div class="item_inner">
+                        <h2 class="d-flex">Bridal Make up<span class="end">$1160.00</span></h2>
+                        <h4 class="d-flex">Face <span class="end">79 {{'times' | translate}}</span></h4>
+                    </div>
+                </ion-item>
+                <ion-item class="animate__animated animate__fadeInUp">
+                    <div class="item_inner">
+                        <h2 class="d-flex">Skin Light Masque<span class="end">$1057.00</span></h2>
+                        <h4 class="d-flex">Face <span class="end">63 {{'times' | translate}}</span></h4>
+                    </div>
+                </ion-item>
+                <ion-item class="animate__animated animate__fadeInUp">
+                    <div class="item_inner">
+                        <h2 class="d-flex">Color My Hair<span class="end">$970.00</span></h2>
+                        <h4 class="d-flex">Hair <span class="end">59 {{'times' | translate}}</span></h4>
+                    </div>
+                </ion-item>
+                <ion-item class="animate__animated animate__fadeInUp">
+                    <div class="item_inner">
+                        <h2 class="d-flex">Fruit Facial<span class="end">$855.00</span></h2>
+                        <h4 class="d-flex">Face <span class="end">48 {{'times' | translate}}</span></h4>
+                    </div>
+                </ion-item>
+                <ion-item class="animate__animated animate__fadeInUp">
+                    <div class="item_inner">
+                        <h2 class="d-flex">Color My Hair<span class="end">$1160.00</span></h2>
+                        <h4 class="d-flex">Hair <span class="end">33 {{'times' | translate}}</span></h4>
+                    </div>
+                </ion-item>
+
+            </ion-list>
+        </div>
+
+
+
+        <div class="tab_content" *ngSwitchCase="'revenue'">
+            <ion-card>
+                <div class="card_containt">
+                    <div class="graph_container d-flex">
+                        <div class="text_container">
+                            <p class="ion-text-end"><span>&nbsp;</span></p>
+                            <p class="ion-text-end"><span>&nbsp;</span></p>
+                            <p class="ion-text-end"><span>&nbsp;</span></p>
+                            <p class="ion-text-end"><span>&nbsp;</span></p>
+                            <p class="ion-text-end"><span>&nbsp;</span></p>
+                            <p class="ion-text-end"><span>&nbsp;</span></p>
+                        </div>
+                        <div class="graph end">
+                            <div class="bar_box">
+                                <div class="bar_box_inner">
+                                    <div class="bar profile_views" style="height:90%;"></div>
+                                    <div class="bar apnt_booked" style="height:20%;"></div>
+                                </div>
+                                <h4>15</h4>
+                            </div>
+                            <div class="bar_box">
+                                <div class="bar_box_inner">
+                                    <div class="bar profile_views" style="height:30%;"></div>
+                                    <div class="bar apnt_booked" style="height:15%;"></div>
+                                </div>
+                                <h4>14</h4>
+                            </div>
+                            <div class="bar_box">
+                                <div class="bar_box_inner">
+                                    <div class="bar profile_views" style="height:95%;"></div>
+                                    <div class="bar apnt_booked" style="height:30%;"></div>
+                                </div>
+                                <h4>13</h4>
+                            </div>
+                            <div class="bar_box">
+                                <div class="bar_box_inner">
+                                    <div class="bar profile_views" style="height:80%;"></div>
+                                    <div class="bar apnt_booked" style="height:65%;"></div>
+                                </div>
+                                <h4>12</h4>
+                            </div>
+                            <div class="bar_box">
+                                <div class="bar_box_inner">
+                                    <div class="bar profile_views" style="height:50%;"></div>
+                                    <div class="bar apnt_booked" style="height:20%;"></div>
+                                </div>
+                                <h4>11</h4>
+                            </div>
+                            <div class="bar_box">
+                                <div class="bar_box_inner">
+                                    <div class="bar profile_views" style="height:85%;"></div>
+                                    <div class="bar apnt_booked" style="height:40%;"></div>
+                                </div>
+                                <h4>10</h4>
+                            </div>
+                            <div class="bar_box">
+                                <div class="bar_box_inner">
+                                    <div class="bar profile_views" style="height:69%;"></div>
+                                    <div class="bar apnt_booked" style="height:45%;"></div>
+                                </div>
+                                <h4>9</h4>
+                            </div>
+                            <div class="bar_box">
+                                <div class="bar_box_inner">
+                                    <div class="bar profile_views" style="height:70%;"></div>
+                                    <div class="bar apnt_booked" style="height:35%;"></div>
+                                </div>
+                                <h4>8</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ion-card>
+            <div class="graph_details">
+                <ion-row>
+                    <ion-col size="4" class="apnt_booked ion-text-start">
+                        <h2> {{'profile_views' | translate}}</h2>
+                        <h3><span></span>&nbsp;&nbsp;100</h3>
+                    </ion-col>
+
+                    <ion-col size="4" class="booked ion-text-center">
+                        <h2> {{'apnt_booked' | translate}}</h2>
+                        <h3><span></span>&nbsp;&nbsp;500</h3>
+                    </ion-col>
+
+                    <ion-col size="4" class="conversion ion-text-end">
+                        <h2> {{'avg_conversion' | translate}}</h2>
+                        <h3><span></span>&nbsp;&nbsp;30.6%</h3>
+                    </ion-col>
+                </ion-row>
+            </div>
+
+
+            <ion-list lines="none">
+                <h3>{{'most_booked_service' | translate}}</h3>
+                <ion-item class="animate__animated animate__fadeInUp">
+                    <div class="item_inner">
+                        <h2 class="d-flex">Bridal Make up<span class="end">$1160.00</span></h2>
+                        <h4 class="d-flex">Face <span class="end">79 {{'times' | translate}}</span></h4>
+                    </div>
+                </ion-item>
+                <ion-item class="animate__animated animate__fadeInUp">
+                    <div class="item_inner">
+                        <h2 class="d-flex">Skin Light Masque<span class="end">$1057.00</span></h2>
+                        <h4 class="d-flex">Face <span class="end">63 {{'times' | translate}}</span></h4>
+                    </div>
+                </ion-item>
+                <ion-item class="animate__animated animate__fadeInUp">
+                    <div class="item_inner">
+                        <h2 class="d-flex">Color My Hair<span class="end">$970.00</span></h2>
+                        <h4 class="d-flex">Hair <span class="end">59 {{'times' | translate}}</span></h4>
+                    </div>
+                </ion-item>
+                <ion-item class="animate__animated animate__fadeInUp">
+                    <div class="item_inner">
+                        <h2 class="d-flex">Fruit Facial<span class="end">$855.00</span></h2>
+                        <h4 class="d-flex">Face <span class="end">48 {{'times' | translate}}</span></h4>
+                    </div>
+                </ion-item>
+                <ion-item class="animate__animated animate__fadeInUp">
+                    <div class="item_inner">
+                        <h2 class="d-flex">Color My Hair<span class="end">$1160.00</span></h2>
+                        <h4 class="d-flex">Hair <span class="end">33 {{'times' | translate}}</span></h4>
+                    </div>
+                </ion-item>
+                <ion-item class="animate__animated animate__fadeInUp">
+                    <div class="item_inner">
+                        <h2 class="d-flex">Bridal Make up<span class="end">$1160.00</span></h2>
+                        <h4 class="d-flex">Face <span class="end">79 {{'times' | translate}}</span></h4>
+                    </div>
+                </ion-item>
+                <ion-item class="animate__animated animate__fadeInUp">
+                    <div class="item_inner">
+                        <h2 class="d-flex">Skin Light Masque<span class="end">$1057.00</span></h2>
+                        <h4 class="d-flex">Face <span class="end">63 {{'times' | translate}}</span></h4>
+                    </div>
+                </ion-item>
+                <ion-item class="animate__animated animate__fadeInUp">
+                    <div class="item_inner">
+                        <h2 class="d-flex">Color My Hair<span class="end">$970.00</span></h2>
+                        <h4 class="d-flex">Hair <span class="end">59 {{'times' | translate}}</span></h4>
+                    </div>
+                </ion-item>
+                <ion-item class="animate__animated animate__fadeInUp">
+                    <div class="item_inner">
+                        <h2 class="d-flex">Fruit Facial<span class="end">$855.00</span></h2>
+                        <h4 class="d-flex">Face <span class="end">48 {{'times' | translate}}</span></h4>
+                    </div>
+                </ion-item>
+                <ion-item class="animate__animated animate__fadeInUp">
+                    <div class="item_inner">
+                        <h2 class="d-flex">Color My Hair<span class="end">$1160.00</span></h2>
+                        <h4 class="d-flex">Hair <span class="end">33 {{'times' | translate}}</span></h4>
+                    </div>
+                </ion-item>
+                <ion-item class="animate__animated animate__fadeInUp">
+                    <div class="item_inner">
+                        <h2 class="d-flex">Bridal Make up<span class="end">$1160.00</span></h2>
+                        <h4 class="d-flex">Face <span class="end">79 {{'times' | translate}}</span></h4>
+                    </div>
+                </ion-item>
+                <ion-item class="animate__animated animate__fadeInUp">
+                    <div class="item_inner">
+                        <h2 class="d-flex">Skin Light Masque<span class="end">$1057.00</span></h2>
+                        <h4 class="d-flex">Face <span class="end">63 {{'times' | translate}}</span></h4>
+                    </div>
+                </ion-item>
+                <ion-item class="animate__animated animate__fadeInUp">
+                    <div class="item_inner">
+                        <h2 class="d-flex">Color My Hair<span class="end">$970.00</span></h2>
+                        <h4 class="d-flex">Hair <span class="end">59 {{'times' | translate}}</span></h4>
+                    </div>
+                </ion-item>
+                <ion-item class="animate__animated animate__fadeInUp">
+                    <div class="item_inner">
+                        <h2 class="d-flex">Fruit Facial<span class="end">$855.00</span></h2>
+                        <h4 class="d-flex">Face <span class="end">48 {{'times' | translate}}</span></h4>
+                    </div>
+                </ion-item>
+                <ion-item class="animate__animated animate__fadeInUp">
+                    <div class="item_inner">
+                        <h2 class="d-flex">Color My Hair<span class="end">$1160.00</span></h2>
+                        <h4 class="d-flex">Hair <span class="end">33 {{'times' | translate}}</span></h4>
+                    </div>
+                </ion-item>
+
+            </ion-list>
+        </div>
+    </div>
+</ion-content>

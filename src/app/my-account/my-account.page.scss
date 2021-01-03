@@ -1,0 +1,215 @@
+ion-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    width: 100%;
+}
+
+.banner {
+    position: relative;
+    overflow: hidden;
+    //    transition: all .5s;
+    z-index: 9999;
+    background: var(--white);
+
+    .banner_inner {
+        width: 100%;
+
+        .profile_img {
+            position: relative;
+
+            ion-slides {
+                ion-slide {
+                    .img_box {
+                        width: 100%;
+                        height: 380px;
+                    }
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    bottom: -11px;
+                    left: 0;
+                    width: 100%;
+                    height: 109px;
+                    z-index: 99;
+                    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, white 82%);
+                }
+
+            }
+
+            .ratings {
+                min-width: fit-content;
+                position: absolute;
+                left: 0;
+                bottom: 7px;
+                width: 100%;
+                z-index: 99;
+                padding: 0 20px;
+                font-weight: 500;
+                font-size: 1rem;
+
+                ion-icon {
+                    display: block;
+                    color: var(--text-light);
+                    font-size: 1.2rem;
+                    min-width: 22px;
+                    opacity: 0.5;
+
+                    &.active {
+                        color: var(--yelow_color);
+                        opacity: 1;
+                    }
+                }
+            }
+
+        }
+
+        .text_box {
+            padding: 0 20px;
+            z-index: 9;
+
+            h2 {
+                margin: 0;
+                color: var(--text-black);
+                font-size: 1.7rem;
+                padding-bottom: 7px;
+                font-weight: 600;
+            }
+
+            h4 {
+                color: var(--text-light);
+                margin: 0;
+                font-weight: 500;
+                font-size: 0.9rem;
+                align-items: flex-start;
+                line-height: 20px;
+
+                ion-icon {
+                    font-size: 1.1rem;
+                    min-width: 19px;
+                    display: block;
+                    position: relative;
+                    top: 0px;
+
+                }
+            }
+        }
+    }
+}
+
+.form {
+    padding-top: 27px;
+
+    ion-list {
+        ion-item {
+            margin-bottom: 23px;
+
+            .item_inner {
+                align-items: center;
+
+                .icon_box ion-icon {
+                    position: relative;
+                    top: 2px;
+                }
+
+                h2 {
+                    margin: 0;
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    letter-spacing: .3px;
+                }
+            }
+
+        }
+    }
+}
+
+.animate__animated.animate__fadeInUp {
+    &:nth-child(1) {
+        --animate-duration: .15s;
+    }
+
+    &:nth-child(2) {
+        --animate-duration: .2s;
+    }
+
+    &:nth-child(3) {
+        --animate-duration: .25s;
+    }
+
+    &:nth-child(4) {
+        --animate-duration: .3s;
+    }
+
+    &:nth-child(5) {
+        --animate-duration: .35s;
+    }
+
+    &:nth-child(6) {
+        --animate-duration: .4s;
+    }
+
+    &:nth-child(7) {
+        --animate-duration: .45s;
+    }
+
+    &:nth-child(8) {
+        --animate-duration: .5s;
+    }
+
+}
+
+.buy_this_app {
+    background: var(--primary);
+    border-radius: 50px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    min-width: 143px;
+    width: fit-content;
+    padding: 0 13px;
+    position: fixed;
+    z-index: 999999;
+    top: 10px;
+    right: 20px;
+    box-shadow: 0px 10px 16px -7px var(--primary) !important;
+
+    h2 {
+        color: var(--white) !important;
+        font-size: 1.1rem !important;
+        font-weight: 500 !important;
+        margin: 0 auto !important;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0 !important;
+
+        ion-icon {
+            font-size: 1rem;
+            min-width: 23px;
+        }
+    }
+}
+
+.developed_by {
+    padding:  0px 20px 20px 20px;
+
+    h2 {
+        margin: 0;
+        color: var(--text-light);
+        font-size: 1.1rem;
+        font-weight: 500;
+        min-width: 41%;
+        letter-spacing: 0;
+    }
+
+    img {
+        max-width: 186px;
+
+        &.dark-theme-logo {
+            display: none;
+        }
+    }
+}

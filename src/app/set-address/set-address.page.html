@@ -1,0 +1,38 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button text="" icon="chevron-back-outline"></ion-back-button>
+        </ion-buttons>
+        <ion-title>
+            {{'set_address' | translate}}
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen class="bg_color">
+    <div class="map">
+        <img src="assets/images/map.png">
+    </div>
+    <div class="map_pin animate__animated animate__zoomIn" style="top: 42%; left:36%;">
+        <img src="assets/images/ic_pin.png">
+    </div>
+</ion-content>
+
+<ion-footer class="ion-no-border animate__animated animate__fadeInUp">
+    <div class="form">
+        <ion-list lines="none">
+            <h2> {{'salon_address' | translate}}</h2>
+            <ion-item lines="none">
+                <div class="item_inner d-flex">
+                    <div class="input_box">
+                        <ion-input mode="md" type="text" placeholder="" value="Central Park, City Tower, New York" readonly="boolean"></ion-input>
+                    </div>
+                    <div class="icon_box ion-text-end">
+                        <ion-icon class="zmdi zmdi-pin"></ion-icon>
+                    </div>
+                </div>
+            </ion-item>
+        </ion-list>
+    </div>
+    <ion-button size="large" expand="full" class="btn">{{'save_address' | translate}}</ion-button>
+</ion-footer>
